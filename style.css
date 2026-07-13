@@ -55,6 +55,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--accent-green);
 }
 
 .logo-accent { color: var(--accent-green); }
@@ -75,14 +76,13 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav-links a {
-  color: var(--text-muted);
-  transition: color 0.2s ease;
+  color: var(--accent-green);
+  font-weight: 700;
+  transition: opacity 0.2s ease;
   position: relative;
 }
 
-.nav-links a::before { content: "/"; color: var(--accent-amber); margin-right: 4px; }
-
-.nav-links a:hover { color: var(--accent-green); }
+.nav-links a:hover { opacity: 0.75; }
 
 .nav-toggle {
   display: none;
@@ -216,7 +216,7 @@ a { text-decoration: none; color: inherit; }
 
 .eyebrow {
   font-family: var(--font-mono);
-  color: var(--accent-amber);
+  color: var(--accent-green);
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
@@ -299,7 +299,7 @@ a { text-decoration: none; color: inherit; }
 .footer {
   text-align: center;
   padding: 32px 24px;
-  color: var(--text-muted);
+  color: var(--accent-green);
   font-family: var(--font-mono);
   font-size: 0.85rem;
   border-top: 1px solid var(--border);
