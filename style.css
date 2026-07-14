@@ -1,16 +1,16 @@
 /* ============ TOKENS ============ */
 :root {
-  --bg: #0D1117;
-  --bg-panel: #161B22;
-  --bg-panel-2: #1C2128;
-  --border: #30363D;
-  --text: #E6EDF3;
-  --text-muted: #8B949E;
-  --accent-green: #7EE787;
-  --accent-amber: #FFA657;
-  --accent-pink: #FF7B9C;
-  --font-mono: 'JetBrains Mono', monospace;
-  --font-body: 'Inter', sans-serif;
+  --bg: #1A1025;
+  --bg-panel: #241633;
+  --bg-panel-2: #2D1B3D;
+  --border: #3D2A52;
+  --text: #F5EFFA;
+  --text-muted: #B8A9C9;
+  --accent-green: #28A745;
+  --accent-amber: #FF4D4D;
+  --accent-pink: #E83E8C;
+  --font-mono: 'Baloo 2', sans-serif;
+  --font-body: 'Nunito', sans-serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,7 +21,9 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse 600px 400px at 50% -10%, rgba(232,62,140,0.12), transparent),
+    var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -34,7 +36,7 @@ a { text-decoration: none; color: inherit; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13, 17, 23, 0.85);
+  background: rgba(26, 16, 37, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -118,7 +120,7 @@ a { text-decoration: none; color: inherit; }
 .terminal-window {
   background: var(--bg-panel);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 18px;
   max-width: 480px;
   margin: 0 auto 48px;
   text-align: left;
@@ -188,17 +190,17 @@ a { text-decoration: none; color: inherit; }
 .btn-primary {
   display: inline-block;
   background: var(--accent-green);
-  color: #0D1117;
+  color: #FFFFFF;
   font-family: var(--font-mono);
   font-weight: 700;
   padding: 14px 30px;
-  border-radius: 6px;
+  border-radius: 14px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px -8px rgba(126, 231, 135, 0.5);
+  box-shadow: 0 10px 24px -8px rgba(40, 167, 69, 0.5);
 }
 
 /* ============ SECTIONS ============ */
@@ -249,7 +251,7 @@ a { text-decoration: none; color: inherit; }
   background: var(--bg-panel-2);
   border: 1px solid var(--border);
   padding: 10px 18px;
-  border-radius: 6px;
+  border-radius: 12px;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -269,7 +271,7 @@ a { text-decoration: none; color: inherit; }
 .contact-card {
   background: var(--bg-panel);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 14px;
   padding: 20px;
   display: flex;
   flex-direction: column;
